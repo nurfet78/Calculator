@@ -99,7 +99,6 @@ export class Calculator {
 
         for (const expr of expressions) {
             const ts = new TokenStream(expr.trim());
-            //ts.get();
             const result = this.expr(ts, true);
 
             results.push({
